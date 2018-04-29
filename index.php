@@ -71,7 +71,7 @@ $hasNotes = isset($aConfig['adv']) && count($aConfig['adv']);
 
 $csvExport = '';
 if(is_array($rParts) && isset($rParts[2])){
-    $csvExport = ' <span class="export-csv-spinner"><i class="fa fa-spinner fa-spin"></i> Export...</span><span class="export-csv"><a class="download" rel="nofollow" target="_blank" href="/service/csv.php?data=' . $rParts[2] . '">Export as CSV</a></span>';
+    $csvExport = ' <span class="export-csv-spinner"><i class="fa fa-spinner fa-spin"></i> Export...</span><span class="export-csv"><a class="download" rel="nofollow" target="_blank" href="./service/csv.php?data=' . $rParts[2] . '">Export as CSV</a></span>';
 }
 ?><!DOCTYPE html>
 <html>
@@ -102,9 +102,9 @@ if(is_array($rParts) && isset($rParts[2])){
     <meta name="referrer" content="never" />
     <meta name="referrer" content="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script src="https://www.google.com/jsapi"></script>
@@ -150,8 +150,8 @@ if(is_array($rParts) && isset($rParts[2])){
     <nav class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-logo-small" href="/"><img title="Ethplorer" src="./favicon.ico"></a>
-                <a class="navbar-logo" href="/"><img title="Ethplorer" src="./images/ethplorer-logo-48.png"></a>
+                <a class="navbar-logo-small" href="./"><img title="Ethplorer" src="./favicon.ico"></a>
+                <a class="navbar-logo" href="./"><img title="Ethplorer" src="./images/ethplorer-logo-48.png"></a>
                 <a class="navbar-logo-extra" href="https://www.everex.io/?from=ethp-hd"><img title="by Everex" src="./images/byeverex.png"></a>
             </div>
             <div id="navbar" class="navbar" style="margin-bottom: 0px;">
@@ -162,8 +162,8 @@ if(is_array($rParts) && isset($rParts[2])){
                     </form>
                 </ul>
                 <ul class="nav navbar-nav navbar-right" id="topmenu">
-                    <li onclick="document.location.href='/top';">TOP-50</li>
-                    <li onclick="document.location.href='/widgets';">Widgets</li>
+                    <li onclick="document.location.href='./top';">TOP-50</li>
+                    <li onclick="document.location.href='./widgets';">Widgets</li>
                     <li onclick="document.location.href='https://github.com/EverexIO/Ethplorer/wiki/Ethplorer-API';">API</li>
                     <li onclick="document.location.href='https://ethplorer.io/#subscribe';">Subscribe</li>
                 </ul>
@@ -269,7 +269,7 @@ if(is_array($rParts) && isset($rParts[2])){
 
                         <div class="col-xs-12 col-md-6 chainy">
                             <div class="block">
-                                <div class="block-header"><h3><a href="/address/0xf3763c30dd6986b53402d41a8552b8f7f6a6089b" style="text-decoration: none;">Chainy</a> <span id="chainy-op"><span></h3></div>
+                                <div class="block-header"><h3><a href="./address/0xf3763c30dd6986b53402d41a8552b8f7f6a6089b" style="text-decoration: none;">Chainy</a> <span id="chainy-op"><span></h3></div>
                                 <table class="table">
                                 <tr>
                                     <td>URL</td>
@@ -516,7 +516,7 @@ if(is_array($rParts) && isset($rParts[2])){
                         </div>
                         <div class="block" id="address-chainy-info">
                             <div class="block-header">
-                                <img src="/images/chainy.png?new" class="token-logo" align="left">
+                                <img src="./images/chainy.png?new" class="token-logo" align="left">
                                 <h3>Chainy Information</h3>
                             </div>
                             <table class="table">
@@ -693,16 +693,16 @@ if(is_array($rParts) && isset($rParts[2])){
         <div class="container">
             <div class="row">
                 <div class="col-xs-7 col-sm-3">
-                    <a href="#"><img src="/images/ethplorerlogowhite400.png" style="max-width: 140px;" alt=""></a>
+                    <a href="#"><img src="./images/ethplorerlogowhite400.png" style="max-width: 140px;" alt=""></a>
                     <div>
                         <div style="color:#eeeeee;">© 2016-2018 <a href="https://everex.one/" target="_blank" class="small-link">Everex</a>
-                            <br><a href="/privacy" class="small-link">Privacy &amp; Terms</a><br>
+                            <br><a href="./privacy" class="small-link">Privacy &amp; Terms</a><br>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-5 col-sm-2 col-md-2 footer-links">
                     <ul>
-                        <li><a href="/widgets">Widgets</a></li>
+                        <li><a href="./widgets">Widgets</a></li>
                         <li><a href="https://github.com/EverexIO/Ethplorer">Sources</a></li>
                         <li><a href="https://github.com/EverexIO/Ethplorer/wiki/Ethplorer-API">API</a></li>
                         <li><a href="https://github.com/EverexIO/Ethplorer/issues">Github Issue</a></li>
