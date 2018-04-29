@@ -129,10 +129,10 @@ if(is_array($rParts) && isset($rParts[2])){
             }
         }
     } ?>
-    <script src="/js/config.js"></script>
-    <script src="/js/md5.min.js"></script>
-    <script src="/js/sha3.min.js"></script>
-    <script src="/js/qrcode.min.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./js/md5.min.js"></script>
+    <script src="./js/sha3.min.js"></script>
+    <script src="./js/qrcode.min.js"></script>
     <?php if(isset($address)){ ?>
         <script>
         var ethplorerWidgetPreload = [
@@ -143,16 +143,16 @@ if(is_array($rParts) && isset($rParts[2])){
         ];
         </script>
     <?php } ?>
-    <script src="/api/widget.js?v=<?=$codeVersion?>"></script>
+    <script src="./api/widget.js?v=<?=$codeVersion?>"></script>
 </head>
 <body>
 <div style="position: relative; min-height: 100vh;">
     <nav class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-logo-small" href="/"><img title="Ethplorer" src="/favicon.ico"></a>
-                <a class="navbar-logo" href="/"><img title="Ethplorer" src="/images/ethplorer-logo-48.png"></a>
-                <a class="navbar-logo-extra" href="https://www.everex.io/?from=ethp-hd"><img title="by Everex" src="/images/byeverex.png"></a>
+                <a class="navbar-logo-small" href="/"><img title="Ethplorer" src="./favicon.ico"></a>
+                <a class="navbar-logo" href="/"><img title="Ethplorer" src="./images/ethplorer-logo-48.png"></a>
+                <a class="navbar-logo-extra" href="https://www.everex.io/?from=ethp-hd"><img title="by Everex" src="./images/byeverex.png"></a>
             </div>
             <div id="navbar" class="navbar" style="margin-bottom: 0px;">
                 <ul class="nav navbar-nav navbar-right" id="searchform">
