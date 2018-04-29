@@ -1,1 +1,0 @@
-if('undefined' === typeof(Ethplorer)) Ethplorer = {}; var ethplorerConfig = Ethplorer.Config = {"testnet":false,"ga":"UA-58688985-12","fb":"1629579527306661","updateLink":"https:\/\/bit.ly\/ethp-contact"}
