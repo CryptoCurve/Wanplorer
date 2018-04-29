@@ -89,9 +89,9 @@ if(is_array($rParts) && isset($rParts[2])){
             if(isset($aExtension['css'])){
                 $aExtension['js'] = (array)$aExtension['js'];
                 foreach($aExtension['css'] as $js){
-                    $jsf = "./extensions/" . $extName . "/" . $js;
+                    $jsf = "/extensions/" . $extName . "/" . $js;
                     if(file_exists(dirname(__FILE__) . $jsf)){
-                        echo '    <link rel="stylesheet" href="' . $jsf . ($cv ? ("?v=" . $cv) : "") . '">' . "\n";
+                        echo '    <link rel="stylesheet" href=".' . $jsf . ($cv ? ("?v=" . $cv) : "") . '">' . "\n";
                     }
                 }
             }
