@@ -80,7 +80,7 @@ if(is_array($rParts) && isset($rParts[2])){
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/ethplorer.css?v=<?=$codeVersion?>">
+    <link rel="stylesheet" href="./css/ethplorer.css?v=<?=$codeVersion?>">
 <?php
     // Load extensions CSS
     if(isset($aConfig['extensions']) && is_array($aConfig['extensions'])){
@@ -89,7 +89,7 @@ if(is_array($rParts) && isset($rParts[2])){
             if(isset($aExtension['css'])){
                 $aExtension['js'] = (array)$aExtension['js'];
                 foreach($aExtension['css'] as $js){
-                    $jsf = "/extensions/" . $extName . "/" . $js;
+                    $jsf = "./extensions/" . $extName . "/" . $js;
                     if(file_exists(dirname(__FILE__) . $jsf)){
                         echo '    <link rel="stylesheet" href="' . $jsf . ($cv ? ("?v=" . $cv) : "") . '">' . "\n";
                     }
