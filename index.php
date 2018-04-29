@@ -109,10 +109,10 @@ if(is_array($rParts) && isset($rParts[2])){
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script src="https://www.google.com/jsapi"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="/js/bignumber.js"></script>
-    <script src="/js/ethplorer.js?v=<?=$codeVersion?>"></script>
-    <script src="/js/ethplorer-search.js?v=<?=$codeVersion?>"></script>
-<?php if($hasNotes):?><script src="/js/ethplorer-note.js?v=<?=$codeVersion?>"></script><?php endif; ?>
+    <script src="./js/bignumber.js"></script>
+    <script src="./js/ethplorer.js?v=<?=$codeVersion?>"></script>
+    <script src="./js/ethplorer-search.js?v=<?=$codeVersion?>"></script>
+<?php if($hasNotes):?><script src="./js/ethplorer-note.js?v=<?=$codeVersion?>"></script><?php endif; ?>
 <?php
     // Load extensions JS
     if(isset($aConfig['extensions']) && is_array($aConfig['extensions'])){
@@ -123,7 +123,7 @@ if(is_array($rParts) && isset($rParts[2])){
                 foreach($aExtension['js'] as $js){
                     $jsf = "/extensions/" . $extName . "/" . $js;
                     if(file_exists(dirname(__FILE__) . $jsf)){
-                        echo '    <script src="' . $jsf . ($cv ? ("?v=" . $cv) : "") . '"></script>' . "\n";
+                        echo '    <script src=".' . $jsf . ($cv ? ("?v=" . $cv) : "") . '"></script>' . "\n";
                     }
                 }
             }
